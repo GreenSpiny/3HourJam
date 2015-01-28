@@ -20,6 +20,7 @@
       <sprite>sprites\particle_spark_spr</sprite>
       <sprite>sprites\particle_sphere_spr</sprite>
     </sprites>
+    <sprite>sprites\smokeNormal_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -48,11 +49,14 @@
       <script>scripts\initGlobalPartMap.gml</script>
       <script>scripts\getParticle.gml</script>
       <script>scripts\particleInit_bigBurst.gml</script>
+      <script>scripts\particleInit_beam.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
     <shader type="GLSLES">shaders\distortionGlow_sdr.shader</shader>
+    <shader type="GLSLES">shaders\bloom_sdr.shader</shader>
+    <shader type="GLSLES">shaders\refraction_sdr.shader</shader>
   </shaders>
   <objects name="objects">
     <object>objects\wall</object>
@@ -63,8 +67,22 @@
         <object>objects\distortionGlowPar</object>
         <object>objects\distortionGlowParticleDrawer</object>
       </objects>
+      <objects name="Bloom">
+        <object>objects\bloomableGlowEffect</object>
+        <object>objects\bloomablePar</object>
+        <object>objects\bloomController</object>
+        <object>objects\bloomParticleController</object>
+        <object>objects\bloomParticleDrawer</object>
+      </objects>
+      <objects name="Refraction">
+        <object>objects\refractionController</object>
+        <object>objects\refractionEffectPar</object>
+        <object>objects\refractionNormalPar</object>
+        <object>objects\refractionParticleDrawer</object>
+      </objects>
       <object>objects\effectsGlobalCon</object>
       <object>objects\testEmitter</object>
+      <object>objects\sniperBeamEffects</object>
     </objects>
   </objects>
   <rooms name="rooms">
