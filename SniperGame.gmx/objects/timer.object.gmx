@@ -102,7 +102,7 @@ if ( !instance_exists( enemy ) ) {
 if ( global.time &lt; 0 ) {
     global.time = 0;
     with ( player ) {
-        exploMakeEffect( x, y, image_angle+90 );
+        exploMakeBigEffect( x, y, 0 );
         instance_destroy( );
     }
 }

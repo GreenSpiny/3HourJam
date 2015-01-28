@@ -62,6 +62,7 @@
     </scripts>
     <script>scripts\beamMakeEffects.gml</script>
     <script>scripts\exploMakeEffect.gml</script>
+    <script>scripts\exploMakeBigEffect.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>

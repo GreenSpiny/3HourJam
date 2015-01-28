@@ -34,8 +34,8 @@ distortionGlow_attachParticleSystem( system1 );
 range = 250;
 
 emitter1 = part_emitter_create( system1 );
-part_emitter_region( system1, emitter1, room_width / 2 - range, room_width / 2 + range
-                        , room_height / 2 - range, room_height/ 2 + range, ps_shape_ellipse, ps_distr_gaussian );
+part_emitter_region( system1, emitter1, x - range, x + range
+                        , y - range, y + range, ps_shape_ellipse, ps_distr_gaussian );
 
 burstDir = 0;
 
