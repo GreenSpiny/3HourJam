@@ -26,7 +26,9 @@
     <sprite>sprites\enemy_spr</sprite>
     <sprite>sprites\bg_spr</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Effects">
