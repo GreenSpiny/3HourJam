@@ -103,8 +103,9 @@ part_system_destroy( system1 );
 
 ///Fire
 
-//shakeScreen( 24, 67, 24 );
+shakeScreen( 24, 67, 24 );
 //playSound( stingerShot_sd, 1, false );
+audio_play_sound( sniperBeam_sd, 1, false );
 var EFFECT_RESOLUTION = 16;
 var EFFECT_AURA_WIDTH = 8;
 var EFFECT_OUTER_WIDTH = 32;

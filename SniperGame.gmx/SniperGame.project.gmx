@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sniperBeam_sd</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\block_spr</sprite>
     <sprite>sprites\player_spr</sprite>
@@ -84,6 +86,7 @@
       <object>objects\effectsGlobalCon</object>
       <object>objects\testEmitter</object>
       <object>objects\sniperBeamEffects</object>
+      <object>objects\cameraShake</object>
     </objects>
   </objects>
   <rooms name="rooms">
