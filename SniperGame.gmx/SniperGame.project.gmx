@@ -24,6 +24,7 @@
     </sprites>
     <sprite>sprites\smokeNormal_spr</sprite>
     <sprite>sprites\enemy_spr</sprite>
+    <sprite>sprites\bg_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -99,6 +100,7 @@
     <object>objects\resolutionCon</object>
     <object>objects\enemy</object>
     <object>objects\timer</object>
+    <object>objects\bgImage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_rm</room>
