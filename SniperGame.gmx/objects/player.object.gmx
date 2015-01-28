@@ -140,6 +140,7 @@ with ( ray ) instance_destroy( );
 var spd = 0.05;
 x = lerp( x, pos[posIndex, 0], spd );
 y = lerp( y, pos[posIndex, 1], spd );
+image_angle = point_direction( x, y, mouse_x, mouse_y ) - 90;
 </string>
           </argument>
         </arguments>
@@ -163,8 +164,10 @@ y = lerp( y, pos[posIndex, 1], spd );
             <string>///Update ray
 
 with ( ray ) {
-    x = other.x;
-    y = other.y;
+    var d = 35;
+    var a = 45;
+    x = other.x + lengthdir_x( d, a + other.image_angle );
+    y = other.y + lengthdir_y( d, a + other.image_angle );
     goalX = mouse_x;
     goalY = mouse_y;
     event_user( 1 );
@@ -202,13 +205,19 @@ if ( mouse_check_button_pressed( mb_left ) ) {
         }
         beamMakeEffects( x, y, 0, 0, pts, ptsCount );
         for ( var i = 1; i &lt; collisionCount; ++i ) {
+            var dir = point_direction( collision[i-1, 0],
+                collision[i-1, 1], collision[i, 0], collision[i, 1] );
             var hit = collision_line(
                 collision[i-1, 0], collision[i-1, 1],
                 collision[i, 0], collision[i, 1],
                 enemy, true, true
             );
             while ( instance_exists( hit ) ) {
-                with ( hit ) instance_destroy( );
+                with ( hit ) {
+                    score += 1;
+                    exploMakeEffect( x, y, dir );
+                    instance_destroy( );
+                }
                 hit = collision_line(
                     collision[i-1, 0], collision[i-1, 1],
                     collision[i, 0], collision[i, 1],
