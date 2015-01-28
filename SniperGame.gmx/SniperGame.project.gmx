@@ -23,6 +23,7 @@
       <sprite>sprites\particle_sphere_spr</sprite>
     </sprites>
     <sprite>sprites\smokeNormal_spr</sprite>
+    <sprite>sprites\enemy_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -90,6 +91,7 @@
       <object>objects\cameraShake</object>
     </objects>
     <object>objects\resolutionCon</object>
+    <object>objects\enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_rm</room>
