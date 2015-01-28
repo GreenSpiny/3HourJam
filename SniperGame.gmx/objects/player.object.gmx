@@ -140,6 +140,7 @@ with ( ray ) instance_destroy( );
 var spd = 0.05;
 x = lerp( x, pos[posIndex, 0], spd );
 y = lerp( y, pos[posIndex, 1], spd );
+image_angle = point_direction( x, y, mouse_x, mouse_y ) - 90;
 </string>
           </argument>
         </arguments>
@@ -163,8 +164,10 @@ y = lerp( y, pos[posIndex, 1], spd );
             <string>///Update ray
 
 with ( ray ) {
-    x = other.x;
-    y = other.y;
+    var d = 35;
+    var a = 45;
+    x = other.x + lengthdir_x( d, a + other.image_angle );
+    y = other.y + lengthdir_y( d, a + other.image_angle );
     goalX = mouse_x;
     goalY = mouse_y;
     event_user( 1 );
