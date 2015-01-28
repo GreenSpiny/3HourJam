@@ -8,6 +8,18 @@
   <sprites name="sprites">
     <sprite>sprites\block_spr</sprite>
     <sprite>sprites\player_spr</sprite>
+    <sprites name="Particles">
+      <sprite>sprites\particle_explosion_spr</sprite>
+      <sprite>sprites\particle_fire_spr</sprite>
+      <sprite>sprites\particle_flare_spr</sprite>
+      <sprite>sprites\particle_lightning_spr</sprite>
+      <sprite>sprites\particle_line_spr</sprite>
+      <sprite>sprites\particle_ring_spr</sprite>
+      <sprite>sprites\particle_smoke_spr</sprite>
+      <sprite>sprites\particle_snow_spr</sprite>
+      <sprite>sprites\particle_spark_spr</sprite>
+      <sprite>sprites\particle_sphere_spr</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,6 +44,11 @@
       <script>scripts\effects_globalSurfaceExists.gml</script>
       <script>scripts\shakeScreen.gml</script>
     </scripts>
+    <scripts name="Particles">
+      <script>scripts\initGlobalPartMap.gml</script>
+      <script>scripts\getParticle.gml</script>
+      <script>scripts\particleInit_bigBurst.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -47,6 +64,7 @@
         <object>objects\distortionGlowParticleDrawer</object>
       </objects>
       <object>objects\effectsGlobalCon</object>
+      <object>objects\testEmitter</object>
     </objects>
   </objects>
   <rooms name="rooms">
