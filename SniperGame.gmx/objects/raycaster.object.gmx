@@ -87,8 +87,8 @@ collision[collisionCount, 0] = curX;
 collision[collisionCount, 1] = curY;
 collisionCount += 1;
 
-repeat ( 2 ) { 
-    var dist = 4096;
+repeat ( 5 ) { 
+    var dist = 1500;
     var obj, tempObj = id;
     while ( instance_exists( tempObj ) ) {
         obj = tempObj;
@@ -107,8 +107,18 @@ repeat ( 2 ) {
     collision[collisionCount, 1] = curY;
     collisionCount += 1;
     
-    if ( instance_exists( tempObj ) ) {
-        curA += 180;
+    if ( instance_exists( obj ) &amp;&amp; ( obj != id ) ) {
+        var ox = ( ( curX - obj.x ) / obj.sprite_width );
+        var oy = ( ( curY - obj.y ) / obj.sprite_height );
+        var normal = curA;
+        if ( abs( ox ) &gt; abs( oy ) ) {
+            if ( ox &gt; 0 ) normal = 270;
+            else normal = 90;
+        } else {
+            if ( oy &lt; 0 ) normal = 180;
+            else normal = 0;
+        }
+        curA = ( normal + angle_difference( normal, curA ) );
     } else break;
 }
 </string>
