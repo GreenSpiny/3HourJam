@@ -51,10 +51,10 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="wall" x="352" y="544" name="inst_2C0A6D90" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="wall" x="928" y="544" name="inst_FAC198D9" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="352" y="544" name="inst_2C0A6D90" locked="0" code="" scaleX="10" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="928" y="544" name="inst_FAC198D9" locked="0" code="" scaleX="15" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="1280" y="832" name="inst_AEEBDF88" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="wall" x="1472" y="544" name="inst_86DDA50E" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="1472" y="544" name="inst_86DDA50E" locked="0" code="" scaleX="2" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="player" x="96" y="352" name="inst_6528A8E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="distortionGlowController" x="32" y="32" name="inst_9FC8C477" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="effectsGlobalCon" x="0" y="128" name="inst_E3B12EF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
