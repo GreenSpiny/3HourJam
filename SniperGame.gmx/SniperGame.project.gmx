@@ -55,6 +55,7 @@
       <script>scripts\particleInit_beam.gml</script>
     </scripts>
     <script>scripts\beamMakeEffects.gml</script>
+    <script>scripts\exploMakeEffect.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -86,7 +87,7 @@
         <object>objects\refractionParticleDrawer</object>
       </objects>
       <object>objects\effectsGlobalCon</object>
-      <object>objects\testEmitter</object>
+      <object>objects\burstEmitter</object>
       <object>objects\sniperBeamEffects</object>
       <object>objects\cameraShake</object>
     </objects>

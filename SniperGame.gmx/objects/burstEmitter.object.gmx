@@ -34,6 +34,9 @@ distortionGlow_attachParticleSystem( system1 );
 
 emitter1 = part_emitter_create( system1 );
 part_emitter_region( system1, emitter1, x, x, y, y, ps_shape_ellipse, ps_distr_gaussian );
+
+burstDir = 0;
+
 </string>
           </argument>
         </arguments>
@@ -66,7 +69,7 @@ part_system_destroy( system1 );
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -85,8 +88,47 @@ part_system_destroy( system1 );
             <kind>1</kind>
             <string>///Emit
 
-part_emitter_burst( system1, emitter1, getParticle( "burstCore3" ), 10 );
+part_emitter_burst( system1, emitter1, getParticle( "burstCore2" ), 10 );
+part_emitter_burst( system1, emitter1, getParticle( "burstCore3" ), 20 );
 
+//part_emitter_burst( system1, emitter1, getParticle( "splashBurst1" ), 15 );
+
+//part_emitter_burst( system1, emitter1, getParticle( "splashBurst2" ), 15 );
+part_emitter_burst( system1, emitter1, getParticle( "splashSpin1" ), 50 );
+part_emitter_burst( system1, emitter1, getParticle( "splashSpin2" ), 50 );
+
+part_type_direction( getParticle( "splashBurst1" ), 
+                        burstDir - 20, burstDir + 20,
+                        0, 15 );
+part_type_direction( getParticle( "splashBurst2" ), 
+                        burstDir - 20, burstDir + 20,
+                        0, 15 );
+part_emitter_burst( system1, emitter1, getParticle( "splashBurst1" ), 15 );
+
+part_emitter_burst( system1, emitter1, getParticle( "splashBurst2" ), 15 );
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_user( 0 );
 </string>
           </argument>
         </arguments>
