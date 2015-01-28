@@ -102,6 +102,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_rm</room>
+    <room>rooms\Lv1_rm</room>
+    <room>rooms\Lv2_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
