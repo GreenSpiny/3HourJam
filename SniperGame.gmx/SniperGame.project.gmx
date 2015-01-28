@@ -92,6 +92,7 @@
     </objects>
     <object>objects\resolutionCon</object>
     <object>objects\enemy</object>
+    <object>objects\timer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_rm</room>

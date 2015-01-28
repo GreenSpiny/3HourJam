@@ -202,13 +202,17 @@ if ( mouse_check_button_pressed( mb_left ) ) {
         }
         beamMakeEffects( x, y, 0, 0, pts, ptsCount );
         for ( var i = 1; i &lt; collisionCount; ++i ) {
+            var dir = point_direction( collision[i-1, 0],
+                collision[i-1, 1], collision[i, 0], collision[i, 1] );
             var hit = collision_line(
                 collision[i-1, 0], collision[i-1, 1],
                 collision[i, 0], collision[i, 1],
                 enemy, true, true
             );
             while ( instance_exists( hit ) ) {
-                with ( hit ) instance_destroy( );
+                with ( hit ) {
+                    instance_destroy( );
+                }
                 hit = collision_line(
                     collision[i-1, 0], collision[i-1, 1],
                     collision[i, 0], collision[i, 1],
