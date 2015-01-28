@@ -9,4 +9,3 @@ with ( instance_create( argument0, argument1, sniperBeamEffects ) ) {
     
     event_user( 0 );
 }
-
