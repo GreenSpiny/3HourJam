@@ -61,6 +61,7 @@
   <objects name="objects">
     <object>objects\wall</object>
     <object>objects\player</object>
+    <object>objects\raycaster</object>
     <objects name="Effects">
       <objects name="Distortion">
         <object>objects\distortionGlowController</object>
