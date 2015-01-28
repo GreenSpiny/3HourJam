@@ -28,7 +28,9 @@
     <sprite>sprites\enemy_spr</sprite>
     <sprite>sprites\bg_spr</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Effects">
@@ -108,6 +110,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Title_rm</room>
+    <room>rooms\LvN_rm</room>
+    <room>rooms\LvX_rm</room>
     <room>rooms\Test_rm</room>
     <room>rooms\Lv1_rm</room>
     <room>rooms\Lv4_rm</room>
