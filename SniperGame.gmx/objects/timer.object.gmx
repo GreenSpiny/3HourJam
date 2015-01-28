@@ -78,7 +78,7 @@ time -= ( 1 / room_speed );
 if ( time &lt; 0 ) {
     time = 0;
     with ( player ) {
-        exploMakeEffect( x, y, image_angle );
+        exploMakeEffect( x, y, image_angle+90 );
         instance_destroy( );
     }
 }
