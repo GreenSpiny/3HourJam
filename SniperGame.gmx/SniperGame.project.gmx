@@ -11,9 +11,43 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Effects">
+      <script>scripts\createLightBurst.gml</script>
+      <script>scripts\createLightBurstAtPosition.gml</script>
+      <script>scripts\createLightWhirl.gml</script>
+      <script>scripts\createLightWhirlAtPosition.gml</script>
+      <script>scripts\createLightWhirlSingle.gml</script>
+      <script>scripts\burstBlurParticle.gml</script>
+      <script>scripts\lighting_createLightBurst.gml</script>
+      <script>scripts\lightingInitProperties.gml</script>
+      <script>scripts\bloom_addToQueue.gml</script>
+      <script>scripts\bloom_attachParticleSystem.gml</script>
+      <script>scripts\distortionGlow_addToQueue.gml</script>
+      <script>scripts\distortionGlow_attachParticleSystem.gml</script>
+      <script>scripts\refracton_attachParticleSystem.gml</script>
+      <script>scripts\refraction_addToQueue.gml</script>
+      <script>scripts\effects_surfaceInit.gml</script>
+      <script>scripts\effects_getShaderSurface.gml</script>
+      <script>scripts\effects_globalSurfaceExists.gml</script>
+      <script>scripts\shakeScreen.gml</script>
+    </scripts>
+  </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader0.shader</shader>
+    <shader type="GLSLES">shaders\distortionGlow_sdr.shader</shader>
+  </shaders>
   <objects name="objects">
     <object>objects\wall</object>
     <object>objects\player</object>
+    <objects name="Effects">
+      <objects name="Distortion">
+        <object>objects\distortionGlowController</object>
+        <object>objects\distortionGlowPar</object>
+        <object>objects\distortionGlowParticleDrawer</object>
+      </objects>
+      <object>objects\effectsGlobalCon</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_rm</room>
