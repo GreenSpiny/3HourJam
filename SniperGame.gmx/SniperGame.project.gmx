@@ -6,6 +6,8 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sniperBeam_sd</sound>
+    <sound>sound\blackout_bg</sound>
+    <sound>sound\hit_sd</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\block_spr</sprite>
@@ -108,6 +110,8 @@
     <room>rooms\Title_rm</room>
     <room>rooms\Test_rm</room>
     <room>rooms\Lv1_rm</room>
+    <room>rooms\Lv4_rm</room>
+    <room>rooms\Lv</room>
     <room>rooms\Lv2_rm</room>
     <room>rooms\Lv3_rm</room>
   </rooms>
