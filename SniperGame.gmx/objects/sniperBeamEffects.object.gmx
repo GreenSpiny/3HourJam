@@ -39,8 +39,8 @@ collPoints[1] = 0;
 collPoints[2] = 400;
 collPoints[3] = 100;
 
-collPoints[4] = 800;
-collPoints[5] = 200
+collPoints[4] = 300;
+collPoints[5] = 500;
 
 system1 = part_system_create();
 bloom_attachParticleSystem( system1, 50 );
