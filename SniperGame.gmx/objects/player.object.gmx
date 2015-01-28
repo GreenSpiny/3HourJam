@@ -211,6 +211,8 @@ if ( mouse_check_button_pressed( mb_left ) ) {
             );
             while ( instance_exists( hit ) ) {
                 with ( hit ) {
+                    score += 1;
+                    exploMakeEffect( x, y, dir );
                     instance_destroy( );
                 }
                 hit = collision_line(

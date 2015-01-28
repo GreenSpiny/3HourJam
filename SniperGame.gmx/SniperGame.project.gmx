@@ -63,6 +63,9 @@
     <shader type="GLSLES">shaders\bloom_sdr.shader</shader>
     <shader type="GLSLES">shaders\refraction_sdr.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\hud_ft</font>
+  </fonts>
   <objects name="objects">
     <object>objects\wall</object>
     <object>objects\player</object>
