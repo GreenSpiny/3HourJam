@@ -88,6 +88,7 @@
       <object>objects\sniperBeamEffects</object>
       <object>objects\cameraShake</object>
     </objects>
+    <object>objects\resolutionCon</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_rm</room>

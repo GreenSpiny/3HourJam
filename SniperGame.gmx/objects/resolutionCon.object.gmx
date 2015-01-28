@@ -2,13 +2,13 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,21 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Setup
+            <string>///Update view port
 
-initGlobalPartMap();
-
-global.shaderEffectSurface = -1;
-global.shaderEffectResolution = 1;
-global.debugMode = false;
-
-global.resX = -1;
-global.resXMax = -1;
-global.resXScale = 1;
-global.resY = -1;
-global.resYMax = -1;
-global.resYScale = 1;
-global.resScale = 1;
+var width = max( window_get_width( ), 320 );
+var height = max( window_get_height( ), 240 );
+if ( view_wport[0] != width || view_hport[0] != height ) {
+    view_wport[0] = width;
+    view_hport[0] = height;
+    surface_resize( application_surface, view_wport[0], view_hport[0] );
+}
 </string>
           </argument>
         </arguments>
