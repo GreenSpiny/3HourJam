@@ -62,29 +62,29 @@ ds_map_add( global.particleMap, "burstSmoke1", pBurstSmoke1 );
 //////////////////////////////////////////////////////////////////////////
 
 pSplashBurst1 = part_type_create();
-part_type_sprite(pSplashBurst1, particle_sphere_spr, 0, 0, 0 );
+part_type_sprite(pSplashBurst1, particle_flare_spr, 0, 0, 0 );
 part_type_size(pSplashBurst1,0.5,2,-0.005,0);
 part_type_scale(pSplashBurst1,2,1);
 part_type_color2(pSplashBurst1,c_purple,make_color_rgb( 255, 255, 50 ));
-part_type_alpha3(pSplashBurst1,0, 0.4, 0);
-part_type_speed(pSplashBurst1,1,10,0,1);
+part_type_alpha3(pSplashBurst1,0, 0.7, 0);
+part_type_speed(pSplashBurst1,1,40,-0.5,1);
 part_type_direction(pSplashBurst1,-20,20,0,0);
 part_type_orientation(pSplashBurst1,0,0,0,0,1);
 part_type_blend(pSplashBurst1,1);
-part_type_life(pSplashBurst1,50,100);
+part_type_life(pSplashBurst1,30,60);
 ds_map_add( global.particleMap, "splashBurst1", pSplashBurst1 );
 
 pSplashBurst2 = part_type_create();
-part_type_sprite(pSplashBurst2, particle_sphere_spr, 0, 0, 0 );
+part_type_sprite(pSplashBurst2, particle_flare_spr, 0, 0, 0 );
 part_type_size(pSplashBurst2,0.5,1,-0.004,0);
 part_type_scale(pSplashBurst2,2,1);
 part_type_color2(pSplashBurst2,c_purple,make_color_rgb( 255, 255, 50 ));
-part_type_alpha3(pSplashBurst2,0, 0.4, 0);
-part_type_speed(pSplashBurst2,1,10,0,0);
+part_type_alpha3(pSplashBurst2,0, 0.8, 0);
+part_type_speed(pSplashBurst2,1,40,-0.5,1);
 part_type_direction(pSplashBurst2,-60,60,0,20);
 part_type_orientation(pSplashBurst2,0,0,0,0,1);
 part_type_blend(pSplashBurst2,1);
-part_type_life(pSplashBurst2,50,100);
+part_type_life(pSplashBurst2,30,60);
 ds_map_add( global.particleMap, "splashBurst2", pSplashBurst2 );
 
 pSplashSpin1 = part_type_create();

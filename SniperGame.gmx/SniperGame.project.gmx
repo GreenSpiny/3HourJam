@@ -52,6 +52,7 @@
       <script>scripts\initGlobalPartMap.gml</script>
       <script>scripts\getParticle.gml</script>
       <script>scripts\particleInit_bigBurst.gml</script>
+      <script>scripts\particleInit_endBurst.gml</script>
       <script>scripts\particleInit_beam.gml</script>
     </scripts>
     <script>scripts\beamMakeEffects.gml</script>
@@ -88,6 +89,7 @@
       </objects>
       <object>objects\effectsGlobalCon</object>
       <object>objects\burstEmitter</object>
+      <object>objects\endBurstEmitter</object>
       <object>objects\sniperBeamEffects</object>
       <object>objects\cameraShake</object>
     </objects>

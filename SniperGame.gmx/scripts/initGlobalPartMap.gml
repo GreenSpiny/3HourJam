@@ -6,4 +6,4 @@ global.particleEmitterMap = ds_map_create();
 
 particleInit_bigBurst();
 particleInit_beam();
-
+particleInit_endBurst();

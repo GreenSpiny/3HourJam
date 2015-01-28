@@ -31,9 +31,11 @@ system1 = part_system_create();
 //bloom_attachParticleSystem( system1, -50 );
 distortionGlow_attachParticleSystem( system1 );
 
+range = 250;
 
 emitter1 = part_emitter_create( system1 );
-part_emitter_region( system1, emitter1, x, x, y, y, ps_shape_ellipse, ps_distr_gaussian );
+part_emitter_region( system1, emitter1, room_width / 2 - range, room_width / 2 + range
+                        , room_height / 2 - range, room_height/ 2 + range, ps_shape_ellipse, ps_distr_gaussian );
 
 burstDir = 0;
 
@@ -88,24 +90,11 @@ part_system_destroy( system1 );
             <kind>1</kind>
             <string>///Emit
 
-part_emitter_burst( system1, emitter1, getParticle( "burstCore2" ), 15 );
-part_emitter_burst( system1, emitter1, getParticle( "burstCore3" ), 50 );
+part_emitter_burst( system1, emitter1, getParticle( "screenBurst1" ), 100 );
+part_emitter_burst( system1, emitter1, getParticle( "screnBurst2" ), 50 );
+part_emitter_burst( system1, emitter1, getParticle( "screenBurstSpin1" ), 100 );
+part_emitter_burst( system1, emitter1, getParticle( "screenBurstSpin2" ), 100 );
 
-//part_emitter_burst( system1, emitter1, getParticle( "splashBurst1" ), 15 );
-
-//part_emitter_burst( system1, emitter1, getParticle( "splashBurst2" ), 15 );
-part_emitter_burst( system1, emitter1, getParticle( "splashSpin1" ), 50 );
-part_emitter_burst( system1, emitter1, getParticle( "splashSpin2" ), 50 );
-
-part_type_direction( getParticle( "splashBurst1" ), 
-                        burstDir - 10, burstDir + 10,
-                        0, 0 );
-part_type_direction( getParticle( "splashBurst2" ), 
-                        burstDir - 10, burstDir + 10,
-                        0, 0 );
-part_emitter_burst( system1, emitter1, getParticle( "splashBurst1" ), 40 );
-
-part_emitter_burst( system1, emitter1, getParticle( "splashBurst2" ), 40 );
 </string>
           </argument>
         </arguments>
