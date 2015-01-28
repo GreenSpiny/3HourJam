@@ -24,6 +24,7 @@
     </sprites>
     <sprite>sprites\smokeNormal_spr</sprite>
     <sprite>sprites\enemy_spr</sprite>
+    <sprite>sprites\bg_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -101,12 +102,14 @@
     <object>objects\timer</object>
     <object>objects\title</object>
     <object>objects\controller</object>
+    <object>objects\bgImage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Title_rm</room>
     <room>rooms\Test_rm</room>
     <room>rooms\Lv1_rm</room>
     <room>rooms\Lv2_rm</room>
+    <room>rooms\Lv3_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
