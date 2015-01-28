@@ -32,6 +32,66 @@ ray = instance_create( x, y, raycaster );
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Positions
+
+posIndex = 0;
+
+pos = false;
+posCount = 0;
+
+var margin = 64;
+
+pos[posCount, 0] = margin;
+pos[posCount, 1] = margin;
+posCount += 1;
+
+pos[posCount, 0] = margin;
+pos[posCount, 1] = room_height / 2;
+posCount += 1;
+
+pos[posCount, 0] = margin;
+pos[posCount, 1] = room_height - margin;
+posCount += 1;
+
+pos[posCount, 0] = room_width / 2;
+pos[posCount, 1] = room_height - margin;
+posCount += 1;
+
+pos[posCount, 0] = room_width - margin;
+pos[posCount, 1] = room_height - margin;
+posCount += 1;
+
+pos[posCount, 0] = room_width - margin;
+pos[posCount, 1] = room_height / 2;
+posCount += 1;
+
+pos[posCount, 0] = room_width - margin;
+pos[posCount, 1] = margin;
+posCount += 1;
+
+pos[posCount, 0] = room_width / 2;
+pos[posCount, 1] = margin;
+posCount += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="1" enumb="0">
       <action>
@@ -59,6 +119,31 @@ with ( ray ) instance_destroy( );
       </action>
     </event>
     <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Move to position
+
+var spd = 0.05;
+x = lerp( x, pos[posIndex, 0], spd );
+y = lerp( y, pos[posIndex, 1], spd );
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -125,6 +210,8 @@ if ( mouse_check_button_pressed( mb_left ) ) {
             }
         }
     }
+    //Update position
+    posIndex = ( ++posIndex % posCount );
 }
 </string>
           </argument>
