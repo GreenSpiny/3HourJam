@@ -135,7 +135,7 @@ repeat ( 2 ) {
             <kind>1</kind>
             <string>///Draw lines
 
-draw_set_color( c_black );
+draw_set_color( c_white );
 draw_set_alpha( 1 );
 
 for ( var i = 1; i &lt; collisionCount; ++i ) {
